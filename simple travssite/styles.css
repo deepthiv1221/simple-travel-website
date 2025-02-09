@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    margin: 20px;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"], select {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#item-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#item-list li:hover {
+    transform: scale(1.05);
+}
+
+#item-list li.done {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+}
+
+#item-list li.animated-item {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+#item-list li input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+#item-list li input[type="number"] {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.remove-btn {
+    margin-left: 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #e53e3e;
+}
+
+#filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-controls input, #filter-controls select {
+    width: 45%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

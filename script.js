@@ -108,6 +108,3 @@ function updateProgress() {
     const progress = total > 0 ? (totalPicked / total) * 100 : 0;
     document.getElementById('progress-percentage').textContent = `${Math.round(progress)}%`;
 }
-document.getElementById("exploreButton").addEventListener("click", () => {
-  alert("🌟 Let's go! Your adventure begins now!");
-});

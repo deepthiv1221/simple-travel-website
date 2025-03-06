@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Item Tracker</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
         <header>
-            <h1>Travel Item Tracker</h1>
+            <h1>🌍 Travel Item Tracker ✈️</h1>
         </header>
 
         <section id="item-input-section">
-            <h2>Add Item</h2>
-            <input type="text" id="item-name" placeholder="Item name">
+            <h2>Add New Item 📝</h2>
+            <input type="text" id="item-name" placeholder="Enter item name">
             <input type="number" id="item-quantity" placeholder="Quantity" min="1">
             <button id="add-item-btn">Add Item</button>
         </section>
 
         <section id="item-list-section">
-            <h2>Your Items</h2>
+            <h2>Your Packing List 🎒</h2>
             <div id="filter-controls">
                 <input type="text" id="filter" placeholder="Search items">
                 <select id="sort-options">
@@ -30,21 +30,19 @@
                     <option value="quantity-desc">Sort by Quantity (High to Low)</option>
                 </select>
             </div>
-            <ul id="item-list">
-                <!-- Items will be displayed here dynamically -->
-            </ul>
+            <ul id="item-list"></ul>
         </section>
 
         <section id="progress-section">
-            <h2>Progress</h2>
-            <p>Picked up: <span id="progress-percentage">0%</span></p>
+            <h2>Progress 🚀</h2>
+            <p>Packed: <span id="progress-percentage">0%</span></p>
         </section>
 
         <footer>
-            <p>Item Tracker App</p>
+            <p>Made with ❤️ for travelers</p>
         </footer>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
